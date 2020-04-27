@@ -1,0 +1,10 @@
+# Project exclude paths
+/eurekanettyclient/target/
+/eurekanettyserver/target/
+/eurekaserver/target/
+/hystrix/target/
+/ribbon/target/
+/zuulgateway/target/
+/pom.xml
+/*/pom.xml
+/*/src/main/resources/*
