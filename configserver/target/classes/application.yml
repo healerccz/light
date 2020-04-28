@@ -1,0 +1,14 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/healerccz/light.git
+          searchPaths: config
+          username: healerccz
+          password: zhao.5386
+      label: master
