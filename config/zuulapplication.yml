@@ -8,6 +8,8 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka/
 zuul:
+  ignored-services: nettyclient
   routes:
-    serviceId: nettyclient
-    path: /nettyclient/**
+    nettyclient:
+     serviceId: nettyclient
+     path: /nettyclient/**
