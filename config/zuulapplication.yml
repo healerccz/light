@@ -10,4 +10,4 @@ eureka:
 zuul:
   routes:
     serviceId: nettyclient
-      path: /nettyclient/**
+    path: /nettyclient/**
