@@ -15,6 +15,5 @@ eureka:
     instance:
       prefer-ip-address: true
 mybatis:
-  mapper-locations:
-    classpath: classpath:/mapping/*.xml
+  mapper-locations: classpath:/mapping/*.xml
     type-aliases-package: com.gateway
