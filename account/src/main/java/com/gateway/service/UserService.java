@@ -1,7 +1,12 @@
 package com.gateway.service;
 
 import com.gateway.entity.User;
+import org.apache.ibatis.annotations.Select;
+
+import java.util.List;
 
 public interface UserService {
-    public User login(String name, String password);
+    User login(String name, String password);
+
+
 }

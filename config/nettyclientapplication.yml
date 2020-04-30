@@ -12,3 +12,7 @@ eureka:
 ribbon:
  eureka:
   enabled: true
+
+logging:
+  file:
+   ${spring.application.name}/src/main/logs/${spring.application.name}.log

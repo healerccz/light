@@ -13,3 +13,8 @@ zuul:
     nettyclient:
      serviceId: nettyclient
      path: /nettyclient/**
+     sensitiveHeaders: "*"
+    account:
+     seviceId: account
+     path: /user/**
+     sensitiveHeaders: "*"
