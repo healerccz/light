@@ -77,3 +77,81 @@
 2020-04-30 22:49:22.536  INFO 19736 --- [http-nio-8050-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
 2020-04-30 22:49:22.672  INFO 19736 --- [http-nio-8050-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
 2020-04-30 22:49:22.728  INFO 19736 --- [http-nio-8050-exec-1] Handler$$EnhancerBySpringCGLIB$$ba9e8698 : info:testlogin
+2020-04-30 23:17:23.279  INFO 12720 --- [main] com.gateway.AccountApplication           : No active profile set, falling back to default profiles: default
+2020-04-30 23:17:23.341  INFO 12720 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3a4ba480: startup date [Thu Apr 30 23:17:23 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1190200a
+2020-04-30 23:17:25.889  INFO 12720 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-30 23:17:26.462  INFO 12720 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+2020-04-30 23:17:26.700  INFO 12720 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=db4c999a-030a-3b71-9163-7d22d6c727b8
+2020-04-30 23:17:26.821  INFO 12720 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-30 23:17:27.244  INFO 12720 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$41ca341e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-30 23:17:27.505  INFO 12720 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5de4371b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-30 23:17:29.630  INFO 12720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8050 (http)
+2020-04-30 23:17:29.811  INFO 12720 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-30 23:17:29.812  INFO 12720 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.35
+2020-04-30 23:17:29.979  INFO 12720 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_211\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\softs\Matlab\runtime\win64;E:\softs\Matlab\bin;E:\softs\matlab\polyspace\bin;C:\WINDOWS\System32\OpenSSH\;C:\Softs\Git\cmd;E:\softs\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jdk1.8.0_211\bin;E:\softs\spss\JRE\bin;E:\softs\maven\bin;E:\softs\mysql-8.0.11\bin\;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\19229\AppData\Local\Microsoft\WindowsApps;E:\softs\nodejs\node_global;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.]
+2020-04-30 23:17:30.964  INFO 12720 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-30 23:17:30.964  INFO 12720 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7623 ms
+2020-04-30 23:17:32.553  INFO 12720 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-04-30 23:17:32.554  INFO 12720 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'sessionRepositoryFilter' to: [/*]
+2020-04-30 23:17:32.554  INFO 12720 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-04-30 23:17:32.554  INFO 12720 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-04-30 23:17:32.555  INFO 12720 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-04-30 23:17:32.556  INFO 12720 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-04-30 23:17:33.690  INFO 12720 --- [main] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2020-04-30 23:17:33.695  INFO 12720 --- [main] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2020-04-30 23:17:36.857  WARN 12720 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-04-30 23:17:36.858  INFO 12720 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-30 23:17:36.862  WARN 12720 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-04-30 23:17:36.862  INFO 12720 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-30 23:17:37.061  INFO 12720 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-30 23:17:37.573  INFO 12720 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3a4ba480: startup date [Thu Apr 30 23:17:23 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1190200a
+2020-04-30 23:17:37.684  INFO 12720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[POST]}" onto public com.gateway.entity.User com.gateway.controller.UserHandler.login(javax.servlet.http.HttpServletRequest)
+2020-04-30 23:17:37.694  INFO 12720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-04-30 23:17:37.697  INFO 12720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-04-30 23:17:37.743  INFO 12720 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-30 23:17:37.744  INFO 12720 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-30 23:17:43.644  INFO 12720 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-04-30 23:17:43.665  INFO 12720 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-04-30 23:17:43.740  INFO 12720 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-04-30 23:17:43.742  INFO 12720 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-04-30 23:17:43.755  INFO 12720 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2020-04-30 23:17:43.759  INFO 12720 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2020-04-30 23:17:43.761  INFO 12720 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2020-04-30 23:17:43.765  INFO 12720 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2020-04-30 23:17:43.808  INFO 12720 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2020-04-30 23:17:43.824  INFO 12720 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=3a4ba480,type=ConfigurationPropertiesRebinder]
+2020-04-30 23:17:43.832  INFO 12720 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-04-30 23:17:43.849  INFO 12720 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2020-04-30 23:17:43.863  INFO 12720 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-04-30 23:17:43.867  INFO 12720 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-04-30 23:17:43.869  INFO 12720 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-04-30 23:17:43.871  INFO 12720 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-04-30 23:17:43.871  INFO 12720 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-04-30 23:17:43.872  INFO 12720 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-04-30 23:17:43.955  INFO 12720 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-30 23:17:43.956  INFO 12720 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-04-30 23:17:43.956  INFO 12720 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-04-30 23:17:43.956  INFO 12720 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-04-30 23:17:43.956  INFO 12720 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-04-30 23:17:43.957  INFO 12720 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-04-30 23:17:43.957  INFO 12720 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-04-30 23:17:43.957  INFO 12720 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-04-30 23:17:43.965  INFO 12720 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-04-30 23:17:43.966  INFO 12720 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-04-30 23:17:43.968  INFO 12720 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-30 23:17:43.971  INFO 12720 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1588259863971 with initial instances count: 4
+2020-04-30 23:17:43.976  INFO 12720 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ACCOUNT with eureka with status UP
+2020-04-30 23:17:43.977  INFO 12720 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1588259863977, current=UP, previous=STARTING]
+2020-04-30 23:17:43.979  INFO 12720 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ACCOUNT/DESKTOP-8KM16BQ.mshome.net:account:8050: registering service...
+2020-04-30 23:17:43.982  INFO 12720 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-04-30 23:17:44.044  INFO 12720 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ACCOUNT/DESKTOP-8KM16BQ.mshome.net:account:8050 - registration status: 204
+2020-04-30 23:17:44.603  INFO 12720 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-04-30 23:17:44.741  INFO 12720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8050 (http) with context path ''
+2020-04-30 23:17:44.743  INFO 12720 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8050
+2020-04-30 23:17:44.748  INFO 12720 --- [main] com.gateway.AccountApplication           : Started AccountApplication in 44.578 seconds (JVM running for 47.107)
+2020-04-30 23:18:16.833  INFO 12720 --- [http-nio-8050-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-04-30 23:18:16.834  INFO 12720 --- [http-nio-8050-exec-10] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-04-30 23:18:16.881  INFO 12720 --- [http-nio-8050-exec-10] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 46 ms
+2020-04-30 23:18:17.084  INFO 12720 --- [http-nio-8050-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-30 23:18:17.460  INFO 12720 --- [http-nio-8050-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-30 23:18:17.821  INFO 12720 --- [http-nio-8050-exec-10] rHandler$$EnhancerBySpringCGLIB$$78a1287 : info:testlogin

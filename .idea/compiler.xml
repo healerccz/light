@@ -7,9 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="eurekanettyserver" />
-        <module name="resttemplate" />
-        <module name="hystrix" />
         <module name="account" />
+        <module name="hystrix" />
+        <module name="resttemplate" />
         <module name="ribbon" />
         <module name="configserver" />
         <module name="eurekaserver" />
