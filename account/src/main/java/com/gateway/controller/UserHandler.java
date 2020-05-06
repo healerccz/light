@@ -25,7 +25,6 @@ public class UserHandler {
     UserService userService;
 
     @PostMapping("/login")
-//    public User login(@RequestParam("username") String username, @RequestParam("password") String password) {
     public User login(HttpServletRequest request) {
         Logger logger = LoggerFactory.getLogger(getClass());
         String username = request.getParameter("username");

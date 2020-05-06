@@ -1,62 +1,61 @@
-2020-05-03 21:18:47.898  INFO 8760 --- [main] com.gateway.NettyServerApplication       : No active profile set, falling back to default profiles: default
-2020-05-03 21:18:47.924  INFO 8760 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4443ef6f: startup date [Sun May 03 21:18:47 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4b2bac3f
-2020-05-03 21:18:48.907  INFO 8760 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0fd8a068-4dd8-36cc-b47a-d8838cd73588
-2020-05-03 21:18:48.924  INFO 8760 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2020-05-03 21:18:49.054  INFO 8760 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a74a1934] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-05-03 21:18:49.774  INFO 8760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8010 (http)
-2020-05-03 21:18:49.836  INFO 8760 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-05-03 21:18:49.837  INFO 8760 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.35
-2020-05-03 21:18:49.843  INFO 8760 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_211\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\softs\Matlab\runtime\win64;E:\softs\Matlab\bin;E:\softs\matlab\polyspace\bin;C:\WINDOWS\System32\OpenSSH\;C:\Softs\Git\cmd;E:\softs\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jdk1.8.0_211\bin;E:\softs\spss\JRE\bin;E:\softs\maven\bin;E:\softs\mysql-8.0.11\bin\;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\19229\AppData\Local\Microsoft\WindowsApps;E:\softs\nodejs\node_global;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.]
-2020-05-03 21:18:50.159  INFO 8760 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-05-03 21:18:50.159  INFO 8760 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2235 ms
-2020-05-03 21:18:50.333  INFO 8760 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
-2020-05-03 21:18:50.342  INFO 8760 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2020-05-03 21:18:50.343  INFO 8760 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2020-05-03 21:18:50.343  INFO 8760 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2020-05-03 21:18:50.343  INFO 8760 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2020-05-03 21:18:50.490  WARN 8760 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2020-05-03 21:18:50.491  INFO 8760 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-05-03 21:18:50.504  WARN 8760 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2020-05-03 21:18:50.507  INFO 8760 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-05-03 21:18:50.712  INFO 8760 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2020-05-03 21:18:51.038  INFO 8760 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4443ef6f: startup date [Sun May 03 21:18:47 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4b2bac3f
-2020-05-03 21:18:51.184  INFO 8760 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2020-05-03 21:18:51.185  INFO 8760 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2020-05-03 21:18:51.250  INFO 8760 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2020-05-03 21:18:51.251  INFO 8760 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2020-05-03 21:18:58.805  INFO 8760 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2020-05-03 21:18:58.821  INFO 8760 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
-2020-05-03 21:18:58.890  INFO 8760 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
-2020-05-03 21:18:58.908  INFO 8760 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
-2020-05-03 21:18:58.909  INFO 8760 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
-2020-05-03 21:18:58.910  INFO 8760 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
-2020-05-03 21:18:58.913  INFO 8760 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
-2020-05-03 21:18:58.928  INFO 8760 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
-2020-05-03 21:18:58.941  INFO 8760 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=4443ef6f,type=ConfigurationPropertiesRebinder]
-2020-05-03 21:18:58.978  INFO 8760 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
-2020-05-03 21:18:58.990  INFO 8760 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2020-05-03 21:18:58.994  INFO 8760 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2020-05-03 21:18:58.996  INFO 8760 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2020-05-03 21:18:58.997  INFO 8760 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2020-05-03 21:18:58.997  INFO 8760 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2020-05-03 21:18:58.997  INFO 8760 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2020-05-03 21:18:59.116  INFO 8760 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-05-03 21:18:59.117  INFO 8760 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2020-05-03 21:18:59.118  INFO 8760 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2020-05-03 21:18:59.118  INFO 8760 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2020-05-03 21:18:59.118  INFO 8760 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2020-05-03 21:18:59.118  INFO 8760 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2020-05-03 21:18:59.118  INFO 8760 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2020-05-03 21:18:59.119  INFO 8760 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2020-05-03 21:18:59.129  INFO 8760 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2020-05-03 21:18:59.130  INFO 8760 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2020-05-03 21:18:59.132  INFO 8760 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2020-05-03 21:18:59.134  INFO 8760 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1588511939134 with initial instances count: 1
-2020-05-03 21:18:59.137  INFO 8760 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application NETTYSERVER with eureka with status UP
-2020-05-03 21:18:59.138  INFO 8760 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1588511939138, current=UP, previous=STARTING]
-2020-05-03 21:18:59.140  INFO 8760 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NETTYSERVER/DESKTOP-8KM16BQ.mshome.net:nettyserver:8010: registering service...
-2020-05-03 21:18:59.201  INFO 8760 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NETTYSERVER/DESKTOP-8KM16BQ.mshome.net:nettyserver:8010 - registration status: 204
-2020-05-03 21:18:59.219  INFO 8760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8010 (http) with context path ''
-2020-05-03 21:18:59.220  INFO 8760 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8010
-2020-05-03 21:18:59.223  INFO 8760 --- [main] com.gateway.NettyServerApplication       : Started NettyServerApplication in 33.02 seconds (JVM running for 36.311)
-2020-05-03 21:23:59.122  INFO 8760 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-06 08:44:35.790  INFO 18316 --- [main] com.gateway.NettyServerApplication       : No active profile set, falling back to default profiles: default
+2020-05-06 08:44:35.809  INFO 18316 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@267517e4: startup date [Wed May 06 08:44:35 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@ae13544
+2020-05-06 08:44:36.473  INFO 18316 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0fd8a068-4dd8-36cc-b47a-d8838cd73588
+2020-05-06 08:44:36.489  INFO 18316 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-06 08:44:36.567  INFO 18316 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f20eb77f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-06 08:44:37.030  INFO 18316 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8010 (http)
+2020-05-06 08:44:37.069  INFO 18316 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-06 08:44:37.069  INFO 18316 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.35
+2020-05-06 08:44:37.075  INFO 18316 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_211\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\softs\Matlab\runtime\win64;E:\softs\Matlab\bin;E:\softs\matlab\polyspace\bin;C:\WINDOWS\System32\OpenSSH\;C:\Softs\Git\cmd;E:\softs\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jdk1.8.0_211\bin;E:\softs\spss\JRE\bin;E:\softs\maven\bin;E:\softs\mysql-8.0.11\bin\;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\19229\AppData\Local\Microsoft\WindowsApps;E:\softs\nodejs\node_global;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.]
+2020-05-06 08:44:37.362  INFO 18316 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-06 08:44:37.362  INFO 18316 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1553 ms
+2020-05-06 08:44:37.456  INFO 18316 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-05-06 08:44:37.463  INFO 18316 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-06 08:44:37.464  INFO 18316 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-06 08:44:37.465  INFO 18316 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-05-06 08:44:37.465  INFO 18316 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-05-06 08:44:37.570  WARN 18316 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-05-06 08:44:37.571  INFO 18316 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-06 08:44:37.579  WARN 18316 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-05-06 08:44:37.579  INFO 18316 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-06 08:44:37.731  INFO 18316 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-06 08:44:37.956  INFO 18316 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@267517e4: startup date [Wed May 06 08:44:35 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@ae13544
+2020-05-06 08:44:38.018  INFO 18316 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-06 08:44:38.019  INFO 18316 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-06 08:44:38.047  INFO 18316 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-06 08:44:38.048  INFO 18316 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-06 08:44:41.682  INFO 18316 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-05-06 08:44:41.692  INFO 18316 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-05-06 08:44:41.717  INFO 18316 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-05-06 08:44:41.727  INFO 18316 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2020-05-06 08:44:41.728  INFO 18316 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2020-05-06 08:44:41.728  INFO 18316 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2020-05-06 08:44:41.731  INFO 18316 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2020-05-06 08:44:41.747  INFO 18316 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2020-05-06 08:44:41.757  INFO 18316 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=267517e4,type=ConfigurationPropertiesRebinder]
+2020-05-06 08:44:41.776  INFO 18316 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2020-05-06 08:44:41.787  INFO 18316 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-05-06 08:44:41.791  INFO 18316 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-05-06 08:44:41.793  INFO 18316 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-05-06 08:44:41.794  INFO 18316 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-05-06 08:44:41.794  INFO 18316 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-05-06 08:44:41.794  INFO 18316 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-05-06 08:44:41.859  INFO 18316 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-06 08:44:41.860  INFO 18316 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-05-06 08:44:41.860  INFO 18316 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-05-06 08:44:41.860  INFO 18316 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-05-06 08:44:41.860  INFO 18316 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-05-06 08:44:41.860  INFO 18316 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-05-06 08:44:41.860  INFO 18316 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-05-06 08:44:41.860  INFO 18316 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-05-06 08:44:41.866  INFO 18316 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-05-06 08:44:41.866  INFO 18316 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-05-06 08:44:41.868  INFO 18316 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-05-06 08:44:41.871  INFO 18316 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1588725881870 with initial instances count: 1
+2020-05-06 08:44:41.874  INFO 18316 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application NETTYSERVER with eureka with status UP
+2020-05-06 08:44:41.875  INFO 18316 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1588725881875, current=UP, previous=STARTING]
+2020-05-06 08:44:41.877  INFO 18316 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NETTYSERVER/DESKTOP-8KM16BQ.mshome.net:nettyserver:8010: registering service...
+2020-05-06 08:44:41.921  INFO 18316 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NETTYSERVER/DESKTOP-8KM16BQ.mshome.net:nettyserver:8010 - registration status: 204
+2020-05-06 08:44:41.924  INFO 18316 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8010 (http) with context path ''
+2020-05-06 08:44:41.926  INFO 18316 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8010
+2020-05-06 08:44:41.929  INFO 18316 --- [main] com.gateway.NettyServerApplication       : Started NettyServerApplication in 19.434 seconds (JVM running for 21.769)
