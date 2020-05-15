@@ -19,11 +19,12 @@ public class nettyClientHandler {
     private NettyClient nettyClient;
 
     @GetMapping("command/{id}")
-    public String sendCom(@PathVariable("id") String id) {
+    public Map<String, String> sendCom(@PathVariable("id") String id) {
         Map<String, String> map = new HashMap<String, String>();
         boolean flag;
         flag = nettyClient.sendCom(id);
         map.put("success", flag ? "true" : "false");
-        return JSON.toJSONString(map);
+//
+        return map;
     }
 }
