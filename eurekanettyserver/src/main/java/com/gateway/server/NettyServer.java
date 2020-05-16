@@ -1,12 +1,15 @@
 package com.gateway.server;
 
 
+import com.alibaba.fastjson.JSON;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelOption;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class NettyServer {
     /**
@@ -39,6 +42,8 @@ public class NettyServer {
             //绑定服务端口监听
             Channel channel = bootstrap.bind(port).sync().channel();
             System.out.println("server run in port " + port);
+            Logger logger = LoggerFactory.getLogger(getClass());
+            logger.info("server run in port " + port + "\n");
             //服务器关闭监听
             /*channel.closeFuture().sync()实际是如何工作:
             channel.closeFuture()不做任何操作，只是简单的返回channel对象中的closeFuture对象，对于每个Channel对象，都会有唯一的一个CloseFuture，用来表示关闭的Future，
