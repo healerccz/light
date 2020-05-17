@@ -69,3 +69,7 @@
 2020-05-17 10:57:18.922  INFO 17404 --- [http-nio-8020-exec-4] com.gateway.client.NettyClient           : send command : {"cmd":1}
 
 2020-05-17 11:01:03.944  INFO 17404 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-17 11:03:21.534  INFO 17404 --- [http-nio-8020-exec-3] com.gateway.client.NettyClient           : send command : {"cmd":1}
+
+2020-05-17 11:06:03.947  INFO 17404 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-17 11:11:03.950  INFO 17404 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

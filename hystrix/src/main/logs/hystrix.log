@@ -101,3 +101,7 @@
 2020-05-17 10:57:39.535  INFO 18696 --- [RMI TCP Connection(3)-192.168.1.5] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://DESKTOP-8KM16BQ.mshome.net:8888/
 2020-05-17 10:57:39.558  INFO 18696 --- [RMI TCP Connection(4)-192.168.1.5] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
 2020-05-17 10:57:42.224  INFO 18696 --- [RMI TCP Connection(3)-192.168.1.5] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=hystrixapplication, profiles=[default], label=master, version=0e63b316ce1ac14971ac63944269df9be2e63264, state=null
+2020-05-17 11:02:38.255  INFO 18696 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-17 11:07:38.257  INFO 18696 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-17 11:12:38.258  INFO 18696 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-17 11:17:38.260  INFO 18696 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
