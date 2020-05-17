@@ -80,3 +80,12 @@
 
 2020-05-17 10:57:18.929 ERROR 14488 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : 没有找到命令中指定的设备通道
 
+2020-05-17 11:01:00.106  INFO 14488 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-17 11:03:21.535  INFO 14488 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : [/127.0.0.1:64946]: {"cmd":1}
+
+2020-05-17 11:03:21.536  INFO 14488 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : from: [/127.0.0.1:64946]: {"cmd":1}
+
+2020-05-17 11:03:21.536  INFO 14488 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : send command : {"SWI":"ON"}
+
+2020-05-17 11:03:21.536 ERROR 14488 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : 没有找到命令中指定的设备通道
+
