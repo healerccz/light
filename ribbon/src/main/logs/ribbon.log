@@ -913,3 +913,4 @@ com.netflix.zuul.exception.ZuulException:
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.35.jar:8.5.35]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_211]
 
+2020-05-17 10:57:27.821  INFO 19180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

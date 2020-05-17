@@ -76,3 +76,7 @@
 
 2020-05-17 10:57:18.927  INFO 14488 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : from: [/127.0.0.1:64946]: {"cmd":1}
 
+2020-05-17 10:57:18.928  INFO 14488 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : send command : {"SWI":"ON"}
+
+2020-05-17 10:57:18.929 ERROR 14488 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : 没有找到命令中指定的设备通道
+

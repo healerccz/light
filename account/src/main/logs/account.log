@@ -158,3 +158,5 @@
 2020-05-17 10:56:54.189  INFO 16320 --- [http-nio-8050-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
 2020-05-17 10:56:55.183  INFO 16320 --- [http-nio-8050-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
 2020-05-17 10:56:55.902  INFO 16320 --- [http-nio-8050-exec-1] Handler$$EnhancerBySpringCGLIB$$feae1d16 : info:testlogin
+2020-05-17 10:57:55.419  INFO 16320 --- [http-nio-8050-exec-2] Handler$$EnhancerBySpringCGLIB$$feae1d16 : info:testlogin
+2020-05-17 11:01:35.723  INFO 16320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
