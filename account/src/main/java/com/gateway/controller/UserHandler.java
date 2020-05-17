@@ -16,7 +16,7 @@ import javax.servlet.http.HttpSession;
 import java.io.Serializable;
 
 @RestController
-@RequestMapping("/user")
+//@RequestMapping("/user")
 @Configuration
 @EnableRedisHttpSession
 public class UserHandler {
