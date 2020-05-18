@@ -400,3 +400,5 @@ Caused by: java.net.SocketException: Software caused connection abort: recv fail
 2020-05-18 21:49:11.769  INFO 13404 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2020-05-18 21:54:11.771  INFO 13404 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2020-05-18 21:59:11.774  INFO 13404 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 22:04:11.776  INFO 13404 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 22:09:11.778  INFO 13404 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

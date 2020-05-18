@@ -312,3 +312,5 @@ Caused by: org.apache.http.NoHttpResponseException: localhost:8761 failed to res
 2020-05-18 21:52:29.829  INFO 17412 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2020-05-18 21:57:29.854  INFO 17412 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2020-05-18 22:02:29.879  INFO 17412 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 22:07:29.880  INFO 17412 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 22:12:29.882  INFO 17412 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
