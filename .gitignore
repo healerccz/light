@@ -5,6 +5,8 @@
 /hystrix/target/
 /ribbon/target/
 /zuulgateway/target/
+/account/target/
+/configserver/target/
 
 # 屏蔽有密码的文件
 /config/accountapplication.properties
