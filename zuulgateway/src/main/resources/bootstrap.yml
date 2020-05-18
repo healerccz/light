@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      name: zuulapplication
+      label: master
+      discovery:
+        enabled: true
+        service-id: configserver

@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      name: accountapplication
+      label: master
+      discovery:
+        enabled: true
+        service-id: configserver

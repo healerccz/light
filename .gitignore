@@ -5,6 +5,7 @@
 /hystrix/target/
 /ribbon/target/
 /zuulgateway/target/
-/pom.xml
-/*/pom.xml
-/*/src/main/resources/*
+
+# 屏蔽有密码的文件
+/config/accountapplication.properties
+/configserver/src/main/resources/application.yml
