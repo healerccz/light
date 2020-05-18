@@ -1,93 +1,587 @@
-2020-05-17 10:50:52.499  INFO 14488 --- [main] com.gateway.NettyServerApplication       : No active profile set, falling back to default profiles: default
-2020-05-17 10:50:52.519  INFO 14488 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@629f066f: startup date [Sun May 17 10:50:52 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@10aa41f2
-2020-05-17 10:50:53.341  INFO 14488 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0fd8a068-4dd8-36cc-b47a-d8838cd73588
-2020-05-17 10:50:53.354  INFO 14488 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2020-05-17 10:50:53.556  INFO 14488 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9797c5ba] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-05-17 10:50:54.375  INFO 14488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8010 (http)
-2020-05-17 10:50:54.418  INFO 14488 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-05-17 10:50:54.418  INFO 14488 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.35
-2020-05-17 10:50:54.427  INFO 14488 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_211\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\softs\Matlab\runtime\win64;E:\softs\Matlab\bin;E:\softs\matlab\polyspace\bin;C:\WINDOWS\System32\OpenSSH\;C:\Softs\Git\cmd;E:\softs\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jdk1.8.0_211\bin;E:\softs\spss\JRE\bin;E:\softs\maven\bin;E:\softs\mysql-8.0.11\bin\;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\19229\AppData\Local\Microsoft\WindowsApps;E:\softs\nodejs\node_global;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.]
-2020-05-17 10:50:54.685  INFO 14488 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-05-17 10:50:54.685  INFO 14488 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2166 ms
-2020-05-17 10:50:54.816  INFO 14488 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
-2020-05-17 10:50:54.827  INFO 14488 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2020-05-17 10:50:54.828  INFO 14488 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2020-05-17 10:50:54.828  INFO 14488 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2020-05-17 10:50:54.828  INFO 14488 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2020-05-17 10:50:54.943  WARN 14488 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2020-05-17 10:50:54.943  INFO 14488 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-05-17 10:50:54.962  WARN 14488 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2020-05-17 10:50:54.962  INFO 14488 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-05-17 10:50:55.097  INFO 14488 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2020-05-17 10:50:55.390  INFO 14488 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@629f066f: startup date [Sun May 17 10:50:52 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@10aa41f2
-2020-05-17 10:50:55.475  INFO 14488 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2020-05-17 10:50:55.476  INFO 14488 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2020-05-17 10:50:55.514  INFO 14488 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2020-05-17 10:50:55.514  INFO 14488 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2020-05-17 10:50:58.100  INFO 14488 --- [Thread-26] com.gateway.server.NettyServer           : server run in port 8999
+2020-05-18 00:02:16.299  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 00:07:16.340  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 00:12:16.342  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 00:17:16.362  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 00:22:16.387  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 00:27:16.411  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 00:32:16.414  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 00:37:16.437  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 00:42:16.439  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 00:47:16.442  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 00:52:16.467  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 00:57:16.469  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 01:02:16.495  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 01:07:16.497  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 01:12:16.499  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 01:17:16.502  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 01:22:16.503  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 01:27:16.504  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 01:32:16.508  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 01:37:16.532  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 01:42:16.557  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 01:47:16.582  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 01:52:16.607  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 01:57:16.609  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 02:02:16.634  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 02:07:16.636  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 02:12:16.637  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 02:17:16.663  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 02:22:16.687  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 02:27:16.713  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 02:32:16.738  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 02:37:16.761  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 02:42:16.764  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 02:47:16.766  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 02:52:16.791  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 02:57:16.792  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 03:02:16.816  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 03:07:16.839  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 03:12:16.841  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 03:17:16.843  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 03:22:16.846  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 03:27:16.850  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 03:32:16.853  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 03:37:16.878  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 03:42:16.880  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 03:47:16.881  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 03:52:16.906  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 03:57:16.931  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 04:01:54.726 ERROR 20044 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
 
-2020-05-17 10:50:59.850  INFO 14488 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2020-05-17 10:50:59.858  INFO 14488 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
-2020-05-17 10:50:59.885  INFO 14488 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
-2020-05-17 10:50:59.896  INFO 14488 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
-2020-05-17 10:50:59.897  INFO 14488 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
-2020-05-17 10:50:59.898  INFO 14488 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
-2020-05-17 10:50:59.901  INFO 14488 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
-2020-05-17 10:50:59.918  INFO 14488 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
-2020-05-17 10:50:59.930  INFO 14488 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=629f066f,type=ConfigurationPropertiesRebinder]
-2020-05-17 10:50:59.960  INFO 14488 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
-2020-05-17 10:50:59.976  INFO 14488 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2020-05-17 10:50:59.981  INFO 14488 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2020-05-17 10:50:59.984  INFO 14488 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2020-05-17 10:50:59.984  INFO 14488 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2020-05-17 10:50:59.984  INFO 14488 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2020-05-17 10:50:59.985  INFO 14488 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2020-05-17 10:51:00.088  INFO 14488 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-05-17 10:51:00.090  INFO 14488 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2020-05-17 10:51:00.091  INFO 14488 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2020-05-17 10:51:00.091  INFO 14488 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2020-05-17 10:51:00.091  INFO 14488 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2020-05-17 10:51:00.091  INFO 14488 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2020-05-17 10:51:00.092  INFO 14488 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2020-05-17 10:51:00.092  INFO 14488 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2020-05-17 10:51:00.105  INFO 14488 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2020-05-17 10:51:00.106  INFO 14488 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2020-05-17 10:51:00.109  INFO 14488 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2020-05-17 10:51:00.111  INFO 14488 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1589683860111 with initial instances count: 3
-2020-05-17 10:51:00.114  INFO 14488 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application NETTYSERVER with eureka with status UP
-2020-05-17 10:51:00.115  INFO 14488 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1589683860115, current=UP, previous=STARTING]
-2020-05-17 10:51:00.130  INFO 14488 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NETTYSERVER/DESKTOP-8KM16BQ.mshome.net:nettyserver:8010: registering service...
-2020-05-17 10:51:00.182  INFO 14488 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NETTYSERVER/DESKTOP-8KM16BQ.mshome.net:nettyserver:8010 - registration status: 204
-2020-05-17 10:51:00.239  INFO 14488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8010 (http) with context path ''
-2020-05-17 10:51:00.243  INFO 14488 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8010
-2020-05-17 10:51:00.250  INFO 14488 --- [main] com.gateway.NettyServerApplication       : Started NettyServerApplication in 25.399 seconds (JVM running for 28.009)
-2020-05-17 10:51:01.928  INFO 14488 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : [/127.0.0.1:64946] is online
+com.sun.jersey.api.client.ClientHandlerException: org.apache.http.NoHttpResponseException: localhost:8761 failed to respond
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1399) [eureka-client-1.9.3.jar:1.9.3]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_211]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_211]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_211]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_211]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_211]
+Caused by: org.apache.http.NoHttpResponseException: localhost:8761 failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259) ~[httpcore-4.4.10.jar:4.4.10]
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:286) ~[httpcore-4.4.10.jar:4.4.10]
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:257) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:230) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273) ~[httpcore-4.4.10.jar:4.4.10]
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125) ~[httpcore-4.4.10.jar:4.4.10]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:684) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:486) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.6.jar:4.5.6]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 26 common frames omitted
 
-2020-05-17 10:52:34.729  INFO 14488 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : [/127.0.0.1:64946]: {"cmd":1}
+2020-05-18 04:01:54.736  WARN 20044 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: org.apache.http.NoHttpResponseException: localhost:8761 failed to respond
+2020-05-18 04:01:54.742  INFO 20044 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution succeeded on retry #1
+2020-05-18 04:02:16.932  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 04:07:16.958  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 04:12:16.984  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 04:17:16.986  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 04:22:16.988  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 04:27:16.990  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 04:32:17.016  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 04:37:17.019  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 04:42:17.044  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 04:47:17.046  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 04:52:17.071  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 04:57:17.074  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 05:02:17.098  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 05:07:17.123  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 05:12:17.125  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 05:17:17.126  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 05:22:17.128  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 05:27:17.130  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 05:32:17.155  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 05:37:17.157  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 05:42:17.159  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 05:47:17.161  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 05:52:17.163  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 05:57:17.188  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 06:02:17.190  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 06:07:17.191  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 06:12:17.216  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 06:17:17.218  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 06:22:17.243  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 06:27:17.244  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 06:32:17.247  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 06:37:17.248  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 06:42:17.250  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 06:47:17.252  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 06:52:17.277  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 06:57:17.301  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 07:02:17.302  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 07:07:17.325  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 07:12:17.327  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 07:17:17.351  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 07:22:17.353  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 07:27:17.376  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 07:32:17.401  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 07:37:17.404  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 07:42:17.407  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 07:47:17.409  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 07:52:17.434  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 07:57:17.458  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 08:02:17.461  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 08:07:17.486  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 08:12:17.512  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 08:17:17.515  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 08:22:17.518  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 08:27:17.543  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 08:32:17.568  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 08:37:17.592  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 08:42:17.616  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 08:47:17.640  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 08:52:17.663  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 08:57:17.689  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 09:02:17.690  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 09:07:17.692  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 09:12:17.716  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 09:17:17.742  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 09:22:17.767  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 09:27:17.769  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 09:32:17.772  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 09:37:17.774  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 09:42:17.776  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 09:47:17.779  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 09:52:17.804  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 09:57:17.830  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 10:02:17.853  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 10:07:17.856  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 10:12:17.860  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 10:17:17.863  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 10:22:17.866  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 10:27:17.869  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 10:32:17.872  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 10:37:17.897  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 10:42:17.921  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 10:47:17.924  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 10:52:17.926  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 10:57:17.930  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 11:02:17.931  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 11:07:17.934  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 11:12:17.935  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 11:17:17.960  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 11:22:17.963  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 11:27:17.989  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 11:32:18.014  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 11:37:18.016  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 11:42:18.017  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 11:47:18.019  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 11:52:18.021  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 11:57:18.022  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 12:02:18.046  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 12:07:18.046  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 12:12:18.071  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 12:17:18.072  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 12:22:18.074  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 12:27:18.076  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 12:32:18.101  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 12:37:18.103  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 12:42:18.105  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 12:47:18.129  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 12:52:18.133  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 12:57:18.157  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 13:02:18.161  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 13:07:18.188  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 13:12:18.189  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 13:17:18.190  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 13:22:18.215  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 13:27:18.217  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 13:32:18.241  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 13:37:18.242  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 13:42:18.245  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 13:47:18.246  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 13:52:18.249  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 13:57:18.251  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 14:02:18.252  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 14:07:18.253  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 14:12:18.255  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 14:17:18.279  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 14:22:18.284  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 14:27:18.287  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 14:32:18.289  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 14:37:18.314  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 14:42:18.341  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 14:47:18.342  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 14:52:18.345  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 14:57:18.385  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 15:02:18.388  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 15:07:18.391  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 15:12:18.393  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 15:17:18.417  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 15:22:18.419  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 15:27:18.441  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 15:32:18.444  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 15:37:18.447  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 15:42:18.447  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 15:47:18.449  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 15:52:18.451  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 15:57:18.456  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 16:02:18.459  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 16:07:18.484  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 16:12:18.487  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 16:17:18.511  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 16:22:18.513  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 16:27:18.516  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 16:32:18.519  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 16:34:18.318  INFO 20044 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : [/127.0.0.1:53813] leave the room
 
-2020-05-17 10:52:34.807  INFO 14488 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : from: [/127.0.0.1:64946]: {"cmd":1}
+2020-05-18 16:34:18.439  INFO 20044 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : [/127.0.0.1:53813] is offline
 
-2020-05-17 10:52:34.826  INFO 14488 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : send command : {"SWI":"ON"}
+2020-05-18 16:34:49.823  INFO 20044 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : [/127.0.0.1:53421] is online
 
-2020-05-17 10:52:34.826 ERROR 14488 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : 没有找到命令中指定的设备通道
+2020-05-18 16:35:46.947  INFO 20044 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : [/127.0.0.1:53421]: {"cmd":1}
 
-2020-05-17 10:56:00.102  INFO 14488 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-05-17 10:57:18.926  INFO 14488 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : [/127.0.0.1:64946]: {"cmd":1}
+2020-05-18 16:35:47.537  INFO 20044 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : from: [/127.0.0.1:53421]: {"cmd":1}
 
-2020-05-17 10:57:18.927  INFO 14488 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : from: [/127.0.0.1:64946]: {"cmd":1}
+2020-05-18 16:35:47.596  INFO 20044 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : send command : {"SWI":"ON"}
 
-2020-05-17 10:57:18.928  INFO 14488 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : send command : {"SWI":"ON"}
+2020-05-18 16:35:47.598 ERROR 20044 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : 没有找到命令中指定的设备通道
 
-2020-05-17 10:57:18.929 ERROR 14488 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : 没有找到命令中指定的设备通道
+2020-05-18 16:37:18.521  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 16:42:18.523  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 16:45:50.829  INFO 20044 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : [/127.0.0.1:53421]: {"cmd":1}
 
-2020-05-17 11:01:00.106  INFO 14488 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-05-17 11:03:21.535  INFO 14488 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : [/127.0.0.1:64946]: {"cmd":1}
+2020-05-18 16:45:50.830  INFO 20044 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : from: [/127.0.0.1:53421]: {"cmd":1}
 
-2020-05-17 11:03:21.536  INFO 14488 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : from: [/127.0.0.1:64946]: {"cmd":1}
+2020-05-18 16:45:50.832  INFO 20044 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : send command : {"SWI":"ON"}
 
-2020-05-17 11:03:21.536  INFO 14488 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : send command : {"SWI":"ON"}
+2020-05-18 16:45:50.832 ERROR 20044 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : 没有找到命令中指定的设备通道
 
-2020-05-17 11:03:21.536 ERROR 14488 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : 没有找到命令中指定的设备通道
+2020-05-18 16:47:18.526  INFO 20044 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 16:51:05.635  INFO 21708 --- [main] com.gateway.NettyServerApplication       : No active profile set, falling back to default profiles: default
+2020-05-18 16:51:05.647  INFO 21708 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5c92166b: startup date [Mon May 18 16:51:05 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@70325e14
+2020-05-18 16:51:06.449  INFO 21708 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0fd8a068-4dd8-36cc-b47a-d8838cd73588
+2020-05-18 16:51:06.469  INFO 21708 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-18 16:51:06.582  INFO 21708 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9427c0db] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-18 16:51:07.155  INFO 21708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8010 (http)
+2020-05-18 16:51:07.190  INFO 21708 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-18 16:51:07.191  INFO 21708 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.35
+2020-05-18 16:51:07.197  INFO 21708 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_211\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\softs\Matlab\runtime\win64;E:\softs\Matlab\bin;E:\softs\matlab\polyspace\bin;C:\WINDOWS\System32\OpenSSH\;C:\Softs\Git\cmd;E:\softs\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jdk1.8.0_211\bin;E:\softs\spss\JRE\bin;E:\softs\maven\bin;E:\softs\mysql-8.0.11\bin\;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\19229\AppData\Local\Microsoft\WindowsApps;E:\softs\nodejs\node_global;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.]
+2020-05-18 16:51:07.362  INFO 21708 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-18 16:51:07.362  INFO 21708 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1716 ms
+2020-05-18 16:51:07.448  INFO 21708 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-05-18 16:51:07.456  INFO 21708 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-18 16:51:07.456  INFO 21708 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-18 16:51:07.457  INFO 21708 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-05-18 16:51:07.457  INFO 21708 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-05-18 16:51:07.646  WARN 21708 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-05-18 16:51:07.646  INFO 21708 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-18 16:51:07.651  WARN 21708 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-05-18 16:51:07.651  INFO 21708 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-18 16:51:07.770  INFO 21708 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-18 16:51:07.983  INFO 21708 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5c92166b: startup date [Mon May 18 16:51:05 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@70325e14
+2020-05-18 16:51:08.064  INFO 21708 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-18 16:51:08.065  INFO 21708 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-18 16:51:08.094  INFO 21708 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-18 16:51:08.094  INFO 21708 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-18 16:51:09.820  INFO 21708 --- [Thread-39] com.gateway.server.NettyServer           : server run in port 8999
 
-2020-05-17 11:06:00.111  INFO 14488 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-05-17 11:11:00.113  INFO 14488 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 16:51:11.571  INFO 21708 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-05-18 16:51:11.580  INFO 21708 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-05-18 16:51:11.623  INFO 21708 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-05-18 16:51:11.655  INFO 21708 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2020-05-18 16:51:11.657  INFO 21708 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2020-05-18 16:51:11.659  INFO 21708 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2020-05-18 16:51:11.666  INFO 21708 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2020-05-18 16:51:11.690  INFO 21708 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2020-05-18 16:51:11.709  INFO 21708 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=5c92166b,type=ConfigurationPropertiesRebinder]
+2020-05-18 16:51:11.761  INFO 21708 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2020-05-18 16:51:11.779  INFO 21708 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-05-18 16:51:11.784  INFO 21708 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-05-18 16:51:11.786  INFO 21708 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-05-18 16:51:11.787  INFO 21708 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-05-18 16:51:11.788  INFO 21708 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-05-18 16:51:11.788  INFO 21708 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-05-18 16:51:11.878  INFO 21708 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 16:51:11.880  INFO 21708 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-05-18 16:51:11.880  INFO 21708 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-05-18 16:51:11.880  INFO 21708 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-05-18 16:51:11.880  INFO 21708 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-05-18 16:51:11.880  INFO 21708 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-05-18 16:51:11.880  INFO 21708 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-05-18 16:51:11.880  INFO 21708 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-05-18 16:51:11.887  INFO 21708 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-05-18 16:51:11.889  INFO 21708 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-05-18 16:51:11.892  INFO 21708 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-05-18 16:51:11.893  INFO 21708 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1589791871893 with initial instances count: 7
+2020-05-18 16:51:11.897  INFO 21708 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application NETTYSERVER with eureka with status UP
+2020-05-18 16:51:11.897  INFO 21708 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1589791871897, current=UP, previous=STARTING]
+2020-05-18 16:51:11.898  INFO 21708 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NETTYSERVER/DESKTOP-8KM16BQ.mshome.net:nettyserver:8010: registering service...
+2020-05-18 16:51:11.981  INFO 21708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8010 (http) with context path ''
+2020-05-18 16:51:11.983  INFO 21708 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8010
+2020-05-18 16:51:11.988  INFO 21708 --- [main] com.gateway.NettyServerApplication       : Started NettyServerApplication in 23.485 seconds (JVM running for 25.788)
+2020-05-18 16:51:11.996  INFO 21708 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NETTYSERVER/DESKTOP-8KM16BQ.mshome.net:nettyserver:8010 - registration status: 204
+2020-05-18 16:52:13.024  INFO 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : [/127.0.0.1:54534] is online
+
+2020-05-18 16:56:11.883  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 17:01:11.885  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 17:06:11.888  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 17:11:11.890  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 17:16:11.892  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 17:21:11.893  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 17:26:11.895  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 17:31:11.897  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 17:36:11.898  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 17:41:11.899  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 17:46:11.902  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 17:51:11.905  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 17:56:11.908  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 18:01:11.911  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 18:06:11.914  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 18:11:11.915  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 18:16:11.917  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 18:20:40.134  INFO 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : [/127.0.0.1:54534]: {"cmd":1}
+
+2020-05-18 18:20:40.199  INFO 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : from: [/127.0.0.1:54534]: {"cmd":1}
+
+2020-05-18 18:20:40.214  INFO 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : send command : {"SWI":"ON"}
+
+2020-05-18 18:20:40.214 ERROR 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : 没有找到命令中指定的设备通道
+
+2020-05-18 18:20:41.168  INFO 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : [/127.0.0.1:54534]: {"cmd":2}
+
+2020-05-18 18:20:41.168  INFO 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : from: [/127.0.0.1:54534]: {"cmd":2}
+
+2020-05-18 18:20:41.168  INFO 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : send command : {"SWI":"ON"}
+
+2020-05-18 18:20:41.169 ERROR 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : 没有找到命令中指定的设备通道
+
+2020-05-18 18:20:42.477  INFO 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : [/127.0.0.1:54534]: {"cmd":1}
+
+2020-05-18 18:20:42.477  INFO 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : from: [/127.0.0.1:54534]: {"cmd":1}
+
+2020-05-18 18:20:42.477  INFO 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : send command : {"SWI":"ON"}
+
+2020-05-18 18:20:42.477 ERROR 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : 没有找到命令中指定的设备通道
+
+2020-05-18 18:20:42.987  INFO 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : [/127.0.0.1:54534]: {"cmd":2}
+
+2020-05-18 18:20:42.987  INFO 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : from: [/127.0.0.1:54534]: {"cmd":2}
+
+2020-05-18 18:20:42.988  INFO 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : send command : {"SWI":"ON"}
+
+2020-05-18 18:20:42.988 ERROR 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : 没有找到命令中指定的设备通道
+
+2020-05-18 18:20:43.817  INFO 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : [/127.0.0.1:54534]: {"cmd":1}
+
+2020-05-18 18:20:43.818  INFO 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : from: [/127.0.0.1:54534]: {"cmd":1}
+
+2020-05-18 18:20:43.818  INFO 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : send command : {"SWI":"ON"}
+
+2020-05-18 18:20:43.818 ERROR 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : 没有找到命令中指定的设备通道
+
+2020-05-18 18:21:11.919  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 18:26:11.922  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 18:31:11.925  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 18:36:11.928  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 18:41:11.930  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 18:46:11.933  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 18:51:11.935  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 18:56:11.937  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 19:01:11.940  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 19:06:11.942  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 19:11:11.944  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 19:16:11.946  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 19:21:11.956  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 19:26:11.959  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 19:31:11.961  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 19:36:11.964  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 19:41:11.968  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 19:46:11.972  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 19:51:11.975  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 19:56:11.999  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 20:01:12.000  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 20:06:12.002  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 20:11:12.027  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 20:16:12.030  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 20:21:12.050  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 20:26:12.053  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 20:31:12.056  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 20:36:12.080  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 20:41:12.105  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 20:46:12.116  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 20:51:12.124  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 20:56:12.128  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 21:01:12.130  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 21:06:12.163  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 21:11:12.166  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 21:16:12.169  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 21:21:12.193  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 21:26:12.196  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 21:31:12.198  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 21:31:32.390  INFO 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : [/127.0.0.1:54534]: {"cmd":1}
+
+2020-05-18 21:31:32.401  INFO 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : from: [/127.0.0.1:54534]: {"cmd":1}
+
+2020-05-18 21:31:32.417  INFO 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : send command : {"SWI":"ON"}
+
+2020-05-18 21:31:32.418 ERROR 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : 没有找到命令中指定的设备通道
+
+2020-05-18 21:32:13.169  INFO 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : [/127.0.0.1:54534]: {"cmd":2}
+
+2020-05-18 21:32:13.171  INFO 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : from: [/127.0.0.1:54534]: {"cmd":2}
+
+2020-05-18 21:32:13.172  INFO 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : send command : {"SWI":"ON"}
+
+2020-05-18 21:32:13.172 ERROR 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : 没有找到命令中指定的设备通道
+
+2020-05-18 21:32:19.207  INFO 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : [/127.0.0.1:54534]: {"cmd":1}
+
+2020-05-18 21:32:19.207  INFO 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : from: [/127.0.0.1:54534]: {"cmd":1}
+
+2020-05-18 21:32:19.208  INFO 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : send command : {"SWI":"ON"}
+
+2020-05-18 21:32:19.208 ERROR 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : 没有找到命令中指定的设备通道
+
+2020-05-18 21:36:12.200  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 21:37:59.625  INFO 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : [/127.0.0.1:54534] leave the room
+
+2020-05-18 21:37:59.747  INFO 21708 --- [nioEventLoopGroup-3-1] com.gateway.server.ServerHandler         : [/127.0.0.1:54534] is offline
+
+2020-05-18 21:38:23.912  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : [/127.0.0.1:58150] is online
+
+2020-05-18 21:39:18.688  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : [/127.0.0.1:58150]: {"cmd":1}
+
+2020-05-18 21:39:18.689  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : from: [/127.0.0.1:58150]: {"cmd":1}
+
+2020-05-18 21:39:18.690  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : send command : {"SWI":"ON"}
+
+2020-05-18 21:39:18.691 ERROR 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : 没有找到命令中指定的设备通道
+
+2020-05-18 21:39:27.834  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : [/127.0.0.1:58150]: {"cmd":2}
+
+2020-05-18 21:39:27.835  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : from: [/127.0.0.1:58150]: {"cmd":2}
+
+2020-05-18 21:39:27.835  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : send command : {"SWI":"ON"}
+
+2020-05-18 21:39:27.835 ERROR 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : 没有找到命令中指定的设备通道
+
+2020-05-18 21:41:12.202  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 21:41:38.153  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : [/127.0.0.1:58150]: {"cmd":1}
+
+2020-05-18 21:41:38.153  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : from: [/127.0.0.1:58150]: {"cmd":1}
+
+2020-05-18 21:41:38.154  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : send command : {"SWI":"ON"}
+
+2020-05-18 21:41:38.154 ERROR 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : 没有找到命令中指定的设备通道
+
+2020-05-18 21:46:12.204  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 21:46:52.642  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : [/127.0.0.1:58150]: {"cmd":1}
+
+2020-05-18 21:46:52.643  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : from: [/127.0.0.1:58150]: {"cmd":1}
+
+2020-05-18 21:46:52.643  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : send command : {"SWI":"ON"}
+
+2020-05-18 21:46:52.643 ERROR 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : 没有找到命令中指定的设备通道
+
+2020-05-18 21:46:54.934  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : [/127.0.0.1:58150]: {"cmd":2}
+
+2020-05-18 21:46:54.935  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : from: [/127.0.0.1:58150]: {"cmd":2}
+
+2020-05-18 21:46:54.936  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : send command : {"SWI":"ON"}
+
+2020-05-18 21:46:54.936 ERROR 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : 没有找到命令中指定的设备通道
+
+2020-05-18 21:46:55.703  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : [/127.0.0.1:58150]: {"cmd":1}
+
+2020-05-18 21:46:55.703  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : from: [/127.0.0.1:58150]: {"cmd":1}
+
+2020-05-18 21:46:55.703  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : send command : {"SWI":"ON"}
+
+2020-05-18 21:46:55.704 ERROR 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : 没有找到命令中指定的设备通道
+
+2020-05-18 21:48:12.444  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : [/127.0.0.1:58150]: {"cmd":1}
+
+2020-05-18 21:48:12.446  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : from: [/127.0.0.1:58150]: {"cmd":1}
+
+2020-05-18 21:48:12.446  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : send command : {"SWI":"ON"}
+
+2020-05-18 21:48:12.446 ERROR 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : 没有找到命令中指定的设备通道
+
+2020-05-18 21:49:29.384  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : [/127.0.0.1:58150]: {"cmd":1}
+
+2020-05-18 21:49:29.385  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : from: [/127.0.0.1:58150]: {"cmd":1}
+
+2020-05-18 21:49:29.385  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : send command : {"SWI":"ON"}
+
+2020-05-18 21:49:29.385 ERROR 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : 没有找到命令中指定的设备通道
+
+2020-05-18 21:50:02.552  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : [/127.0.0.1:58150]: {"cmd":2}
+
+2020-05-18 21:50:02.553  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : from: [/127.0.0.1:58150]: {"cmd":2}
+
+2020-05-18 21:50:02.553  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : send command : {"SWI":"ON"}
+
+2020-05-18 21:50:02.554 ERROR 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : 没有找到命令中指定的设备通道
+
+2020-05-18 21:51:07.210  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : [/127.0.0.1:58150]: {"cmd":1}
+
+2020-05-18 21:51:07.211  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : from: [/127.0.0.1:58150]: {"cmd":1}
+
+2020-05-18 21:51:07.211  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : send command : {"SWI":"ON"}
+
+2020-05-18 21:51:07.211 ERROR 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : 没有找到命令中指定的设备通道
+
+2020-05-18 21:51:12.206  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 21:56:12.209  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 22:00:16.849  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : [/127.0.0.1:58150]: {"cmd":1}
+
+2020-05-18 22:00:16.850  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : from: [/127.0.0.1:58150]: {"cmd":1}
+
+2020-05-18 22:00:16.851  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : send command : {"SWI":"ON"}
+
+2020-05-18 22:00:16.852 ERROR 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : 没有找到命令中指定的设备通道
+
+2020-05-18 22:00:27.434  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : [/127.0.0.1:58150]: {"cmd":2}
+
+2020-05-18 22:00:27.434  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : from: [/127.0.0.1:58150]: {"cmd":2}
+
+2020-05-18 22:00:27.435  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : send command : {"SWI":"ON"}
+
+2020-05-18 22:00:27.435 ERROR 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : 没有找到命令中指定的设备通道
+
+2020-05-18 22:00:44.535  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : [/127.0.0.1:58150]: {"cmd":1}
+
+2020-05-18 22:00:44.535  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : from: [/127.0.0.1:58150]: {"cmd":1}
+
+2020-05-18 22:00:44.535  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : send command : {"SWI":"ON"}
+
+2020-05-18 22:00:44.535 ERROR 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : 没有找到命令中指定的设备通道
+
+2020-05-18 22:00:49.401  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : [/127.0.0.1:58150]: {"cmd":4}
+
+2020-05-18 22:00:49.402  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : from: [/127.0.0.1:58150]: {"cmd":4}
+
+2020-05-18 22:00:49.414 ERROR 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : 没有找到命令中指定的设备通道
+
+2020-05-18 22:00:54.153  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : [/127.0.0.1:58150]: {"cmd":5}
+
+2020-05-18 22:00:54.153  INFO 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : from: [/127.0.0.1:58150]: {"cmd":5}
+
+2020-05-18 22:00:54.153 ERROR 21708 --- [nioEventLoopGroup-3-2] com.gateway.server.ServerHandler         : 没有找到命令中指定的设备通道
+
+2020-05-18 22:01:12.235  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-18 22:06:12.259  INFO 21708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
