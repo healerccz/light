@@ -1,5 +1,6 @@
 package com.gateway;
 
+import com.gateway.redis.BaseRedisService;
 import com.gateway.server.NettyServer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

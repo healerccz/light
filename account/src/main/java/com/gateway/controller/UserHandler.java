@@ -48,6 +48,7 @@ public class UserHandler {
             //存放在redis中,key为自定义token令牌,value为用户id
             baseRedisService.setString(token, id+"", 3600L);
             logger.info("info:" + user.username + "login");
+
             returnData.code = 200+"";
             returnData.msg = "登录成功";
             returnData.token = token;
