@@ -21,7 +21,7 @@ public class BaseRedisService {
 
     //传入键值对和过期时间
     public void setString(String key, String value, Long timeOut) {
-        System.out.println("到setString里面了");
+        System.out.println("到setString里面了----------");
         set(key, value, timeOut);
     }
 
