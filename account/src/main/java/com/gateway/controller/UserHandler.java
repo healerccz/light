@@ -53,6 +53,7 @@ public class UserHandler {
             returnData.id = user.id+"";
             returnData.username = user.username;
         }
+        System.out.println(baseRedisService);
         return returnData;
     }
 }

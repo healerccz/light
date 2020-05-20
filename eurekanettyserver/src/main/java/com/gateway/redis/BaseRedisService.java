@@ -1,8 +1,11 @@
 package com.gateway.redis;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.concurrent.TimeUnit;
 
@@ -38,6 +41,7 @@ public class BaseRedisService {
             }
             System.out.println("redis执行了--------------------");
         }
+        System.out.println("set执行完了--------");
     }
 
     /**
@@ -54,5 +58,9 @@ public class BaseRedisService {
      */
     public void delete(String key){
         stringRedisTemplate.delete(key);
+    }
+
+    public String test() {
+        return "this is test";
     }
 }
