@@ -3099,3 +3099,5 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2020-05-20 19:51:12.469  INFO 4556 --- [http-nio-8020-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
 2020-05-20 19:51:12.593  INFO 4556 --- [http-nio-8020-exec-1] com.gateway.client.NettyClient           : send command : {"cmd":1}
 
+2020-05-20 19:51:33.676  INFO 4556 --- [http-nio-8020-exec-2] com.gateway.client.NettyClient           : send command : {"cmd":2}
+
