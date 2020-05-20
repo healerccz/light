@@ -21,6 +21,7 @@ public class BaseRedisService {
 
     //传入键值对和过期时间
     public void setString(String key, String value, Long timeOut) {
+        System.out.println("到setString里面了");
         set(key, value, timeOut);
     }
 
@@ -35,6 +36,7 @@ public class BaseRedisService {
             if (timeOut != null) {
                 stringRedisTemplate.expire(key, timeOut, TimeUnit.SECONDS);
             }
+            System.out.println("redis执行了--------------------");
         }
     }
 
