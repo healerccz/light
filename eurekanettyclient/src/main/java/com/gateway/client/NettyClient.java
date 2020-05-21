@@ -64,6 +64,7 @@ public class NettyClient {
             System.out.println(JSON.toJSONString(cmd));
             Logger logger = LoggerFactory.getLogger(getClass());
             logger.info("send command : " + JSON.toJSONString(cmd) + "\n");
+
             return true;
         }
         return false;

@@ -5,15 +5,17 @@ import com.gateway.server.NettyServer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+import com.gateway.Applications;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@ComponentScan("com.gateway.redis")
 public class NettyServerApplication {
     public static void main(String[] args) {
-        SpringApplication.run(NettyServerApplication.class, args);
+        ConfigurableApplicationContext run = SpringApplication.run(NettyServerApplication.class, args);
+        Applications.setContext(run);
     }
 
     @Bean
@@ -27,6 +29,7 @@ public class NettyServerApplication {
         }).start();
         return nettyServer;
     }
+
 
 //    @Bean
 //    public BaseRedisService getBaseRedisServic() {

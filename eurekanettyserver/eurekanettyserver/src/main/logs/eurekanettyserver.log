@@ -1,0 +1,222 @@
+2020-05-21 12:45:52.658  INFO 9212 --- [main] com.gateway.TestNettyServerApplication   : No active profile set, falling back to default profiles: default
+2020-05-21 12:45:52.662  INFO 9212 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@228cea97: startup date [Thu May 21 12:45:52 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@39d9314d
+2020-05-21 12:45:53.491  INFO 9212 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-21 12:45:54.142  INFO 9212 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a6834a01-6e6b-3f69-be8a-8dbfe9e1d262
+2020-05-21 12:45:54.240  INFO 9212 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-21 12:45:54.442  INFO 9212 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c451270e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-21 12:45:55.695  WARN 9212 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-05-21 12:45:55.696  INFO 9212 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-21 12:45:55.714  WARN 9212 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-05-21 12:45:55.714  INFO 9212 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-21 12:45:55.891  INFO 9212 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-21 12:45:56.459  INFO 9212 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@228cea97: startup date [Thu May 21 12:45:52 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@39d9314d
+2020-05-21 12:45:56.749  INFO 9212 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-21 12:45:56.751  INFO 9212 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-21 12:45:56.821  INFO 9212 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-21 12:45:56.822  INFO 9212 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-21 12:46:00.601  INFO 9212 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-05-21 12:46:00.618  INFO 9212 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-05-21 12:46:00.682  INFO 9212 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2020-05-21 12:46:00.704  INFO 9212 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-05-21 12:46:00.710  INFO 9212 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-05-21 12:46:00.712  INFO 9212 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-05-21 12:46:00.713  INFO 9212 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-05-21 12:46:00.713  INFO 9212 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-05-21 12:46:00.714  INFO 9212 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-05-21 12:46:00.784  INFO 9212 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-21 12:46:00.785  INFO 9212 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-05-21 12:46:00.786  INFO 9212 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-05-21 12:46:00.786  INFO 9212 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-05-21 12:46:00.786  INFO 9212 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-05-21 12:46:00.786  INFO 9212 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-05-21 12:46:00.786  INFO 9212 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-05-21 12:46:00.787  INFO 9212 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-05-21 12:46:00.794  INFO 9212 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-05-21 12:46:00.796  INFO 9212 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-05-21 12:46:00.799  INFO 9212 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-05-21 12:46:00.801  INFO 9212 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1590036360801 with initial instances count: 4
+2020-05-21 12:46:00.809  INFO 9212 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application NETTYSERVER with eureka with status UP
+2020-05-21 12:46:00.810  INFO 9212 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1590036360810, current=UP, previous=STARTING]
+2020-05-21 12:46:00.818  INFO 9212 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NETTYSERVER/DESKTOP-8KM16BQ:nettyserver:8010: registering service...
+2020-05-21 12:46:00.838  INFO 9212 --- [main] com.gateway.TestNettyServerApplication   : Started TestNettyServerApplication in 22.015 seconds (JVM running for 24.24)
+2020-05-21 12:46:00.863  INFO 9212 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NETTYSERVER/DESKTOP-8KM16BQ:nettyserver:8010 - registration status: 204
+2020-05-21 12:46:01.239  INFO 9212 --- [Thread-6] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@228cea97: startup date [Thu May 21 12:45:52 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@39d9314d
+2020-05-21 12:46:01.241  INFO 9212 --- [Thread-6] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application NETTYSERVER with eureka with status DOWN
+2020-05-21 12:46:01.241  WARN 9212 --- [Thread-6] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1590036361241, current=DOWN, previous=UP]
+2020-05-21 12:46:01.241  INFO 9212 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NETTYSERVER/DESKTOP-8KM16BQ:nettyserver:8010: registering service...
+2020-05-21 12:46:01.249  INFO 9212 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NETTYSERVER/DESKTOP-8KM16BQ:nettyserver:8010 - registration status: 204
+2020-05-21 12:46:01.250  INFO 9212 --- [Thread-6] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2020-05-21 12:46:01.288  INFO 9212 --- [Thread-6] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-05-21 12:46:01.291  INFO 9212 --- [Thread-6] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-05-21 12:46:04.294  INFO 9212 --- [Thread-6] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-05-21 12:46:04.303  INFO 9212 --- [Thread-6] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NETTYSERVER/DESKTOP-8KM16BQ:nettyserver:8010 - deregister  status: 200
+2020-05-21 12:46:04.310  INFO 9212 --- [Thread-6] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-05-21 12:46:46.680  INFO 14656 --- [main] com.gateway.TestNettyServerApplication   : No active profile set, falling back to default profiles: default
+2020-05-21 12:46:46.685  INFO 14656 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@228cea97: startup date [Thu May 21 12:46:46 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@39d9314d
+2020-05-21 12:46:47.234  INFO 14656 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-21 12:46:47.694  INFO 14656 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a6834a01-6e6b-3f69-be8a-8dbfe9e1d262
+2020-05-21 12:46:47.760  INFO 14656 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-21 12:46:47.925  INFO 14656 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c451270e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-21 12:46:48.796  WARN 14656 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-05-21 12:46:48.798  INFO 14656 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-21 12:46:48.821  WARN 14656 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-05-21 12:46:48.821  INFO 14656 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-21 12:46:48.981  INFO 14656 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-21 12:46:49.530  INFO 14656 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@228cea97: startup date [Thu May 21 12:46:46 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@39d9314d
+2020-05-21 12:46:49.655  INFO 14656 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-21 12:46:49.657  INFO 14656 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-21 12:46:49.701  INFO 14656 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-21 12:46:49.701  INFO 14656 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-21 12:46:50.833  INFO 14656 --- [Thread-5] com.gateway.server.NettyServer           : server run in port 8999
+
+2020-05-21 12:46:53.280  INFO 14656 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-05-21 12:46:53.291  INFO 14656 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-05-21 12:46:53.344  INFO 14656 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2020-05-21 12:46:53.363  INFO 14656 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-05-21 12:46:53.368  INFO 14656 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-05-21 12:46:53.371  INFO 14656 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-05-21 12:46:53.371  INFO 14656 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-05-21 12:46:53.372  INFO 14656 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-05-21 12:46:53.372  INFO 14656 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-05-21 12:46:53.463  INFO 14656 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-21 12:46:53.465  INFO 14656 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-05-21 12:46:53.465  INFO 14656 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-05-21 12:46:53.465  INFO 14656 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-05-21 12:46:53.466  INFO 14656 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-05-21 12:46:53.466  INFO 14656 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-05-21 12:46:53.467  INFO 14656 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-05-21 12:46:53.467  INFO 14656 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-05-21 12:46:53.472  INFO 14656 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-05-21 12:46:53.473  INFO 14656 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-05-21 12:46:53.476  INFO 14656 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-05-21 12:46:53.478  INFO 14656 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1590036413478 with initial instances count: 3
+2020-05-21 12:46:53.484  INFO 14656 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application NETTYSERVER with eureka with status UP
+2020-05-21 12:46:53.485  INFO 14656 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1590036413485, current=UP, previous=STARTING]
+2020-05-21 12:46:53.504  INFO 14656 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NETTYSERVER/DESKTOP-8KM16BQ:nettyserver:8010: registering service...
+2020-05-21 12:46:53.536  INFO 14656 --- [main] com.gateway.TestNettyServerApplication   : Started TestNettyServerApplication in 19.806 seconds (JVM running for 21.367)
+2020-05-21 12:46:53.576  INFO 14656 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NETTYSERVER/DESKTOP-8KM16BQ:nettyserver:8010 - registration status: 204
+2020-05-21 12:46:53.761  INFO 14656 --- [Thread-6] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@228cea97: startup date [Thu May 21 12:46:46 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@39d9314d
+2020-05-21 12:46:53.761  INFO 14656 --- [Thread-6] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application NETTYSERVER with eureka with status DOWN
+2020-05-21 12:46:53.762  WARN 14656 --- [Thread-6] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1590036413762, current=DOWN, previous=UP]
+2020-05-21 12:46:53.762  INFO 14656 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NETTYSERVER/DESKTOP-8KM16BQ:nettyserver:8010: registering service...
+2020-05-21 12:46:53.766  INFO 14656 --- [Thread-6] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2020-05-21 12:46:53.769  INFO 14656 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NETTYSERVER/DESKTOP-8KM16BQ:nettyserver:8010 - registration status: 204
+2020-05-21 12:46:53.791  INFO 14656 --- [Thread-6] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-05-21 12:46:53.793  INFO 14656 --- [Thread-6] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-05-21 12:46:56.797  INFO 14656 --- [Thread-6] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-05-21 12:46:56.806  INFO 14656 --- [Thread-6] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NETTYSERVER/DESKTOP-8KM16BQ:nettyserver:8010 - deregister  status: 200
+2020-05-21 12:46:56.812  INFO 14656 --- [Thread-6] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-05-21 12:48:53.543  INFO 1772 --- [main] com.gateway.TestNettyServerApplication   : No active profile set, falling back to default profiles: default
+2020-05-21 12:48:53.548  INFO 1772 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@228cea97: startup date [Thu May 21 12:48:53 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@39d9314d
+2020-05-21 12:48:54.104  INFO 1772 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-21 12:48:54.528  INFO 1772 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a6834a01-6e6b-3f69-be8a-8dbfe9e1d262
+2020-05-21 12:48:54.591  INFO 1772 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-21 12:48:54.714  INFO 1772 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c451270e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-21 12:48:55.605  WARN 1772 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-05-21 12:48:55.606  INFO 1772 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-21 12:48:55.618  WARN 1772 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-05-21 12:48:55.625  INFO 1772 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-21 12:48:55.820  INFO 1772 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-21 12:48:56.319  INFO 1772 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@228cea97: startup date [Thu May 21 12:48:53 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@39d9314d
+2020-05-21 12:48:56.443  INFO 1772 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-21 12:48:56.445  INFO 1772 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-21 12:48:56.487  INFO 1772 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-21 12:48:56.487  INFO 1772 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-21 12:48:57.712  INFO 1772 --- [Thread-5] com.gateway.server.NettyServer           : server run in port 8999
+
+2020-05-21 12:49:00.148  INFO 1772 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-05-21 12:49:00.157  INFO 1772 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-05-21 12:49:00.200  INFO 1772 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2020-05-21 12:49:00.222  INFO 1772 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-05-21 12:49:00.228  INFO 1772 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-05-21 12:49:00.234  INFO 1772 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-05-21 12:49:00.234  INFO 1772 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-05-21 12:49:00.235  INFO 1772 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-05-21 12:49:00.235  INFO 1772 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-05-21 12:49:00.300  INFO 1772 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-21 12:49:00.302  INFO 1772 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-05-21 12:49:00.302  INFO 1772 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-05-21 12:49:00.302  INFO 1772 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-05-21 12:49:00.302  INFO 1772 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-05-21 12:49:00.303  INFO 1772 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-05-21 12:49:00.305  INFO 1772 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-05-21 12:49:00.306  INFO 1772 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-05-21 12:49:00.326  INFO 1772 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-05-21 12:49:00.330  INFO 1772 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-05-21 12:49:00.333  INFO 1772 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-05-21 12:49:00.343  INFO 1772 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1590036540343 with initial instances count: 3
+2020-05-21 12:49:00.350  INFO 1772 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application NETTYSERVER with eureka with status UP
+2020-05-21 12:49:00.355  INFO 1772 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1590036540355, current=UP, previous=STARTING]
+2020-05-21 12:49:00.359  INFO 1772 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NETTYSERVER/DESKTOP-8KM16BQ:nettyserver:8010: registering service...
+2020-05-21 12:49:00.384  INFO 1772 --- [main] com.gateway.TestNettyServerApplication   : Started TestNettyServerApplication in 19.646 seconds (JVM running for 21.205)
+2020-05-21 12:49:00.477  INFO 1772 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NETTYSERVER/DESKTOP-8KM16BQ:nettyserver:8010 - registration status: 204
+2020-05-21 12:49:00.804  INFO 1772 --- [main] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2020-05-21 12:49:00.806  INFO 1772 --- [main] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2020-05-21 12:49:01.094  INFO 1772 --- [Thread-6] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@228cea97: startup date [Thu May 21 12:48:53 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@39d9314d
+2020-05-21 12:49:01.095  INFO 1772 --- [Thread-6] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application NETTYSERVER with eureka with status DOWN
+2020-05-21 12:49:01.095  WARN 1772 --- [Thread-6] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1590036541095, current=DOWN, previous=UP]
+2020-05-21 12:49:01.096  INFO 1772 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NETTYSERVER/DESKTOP-8KM16BQ:nettyserver:8010: registering service...
+2020-05-21 12:49:01.098  INFO 1772 --- [Thread-6] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2020-05-21 12:49:01.102  INFO 1772 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NETTYSERVER/DESKTOP-8KM16BQ:nettyserver:8010 - registration status: 204
+2020-05-21 12:49:02.230  INFO 1772 --- [Thread-6] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-05-21 12:49:02.234  INFO 1772 --- [Thread-6] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-05-21 12:49:05.235  INFO 1772 --- [Thread-6] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-05-21 12:49:05.242  INFO 1772 --- [Thread-6] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NETTYSERVER/DESKTOP-8KM16BQ:nettyserver:8010 - deregister  status: 200
+2020-05-21 12:49:05.248  INFO 1772 --- [Thread-6] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-05-21 13:07:17.145  INFO 17020 --- [main] com.gateway.TestNettyServerApplication   : No active profile set, falling back to default profiles: default
+2020-05-21 13:07:17.177  INFO 17020 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@228cea97: startup date [Thu May 21 13:07:17 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@39d9314d
+2020-05-21 13:07:17.730  INFO 17020 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-21 13:07:18.131  INFO 17020 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a6834a01-6e6b-3f69-be8a-8dbfe9e1d262
+2020-05-21 13:07:18.191  INFO 17020 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-21 13:07:18.361  INFO 17020 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c451270e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-21 13:07:19.252  WARN 17020 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-05-21 13:07:19.254  INFO 17020 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-21 13:07:19.272  WARN 17020 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-05-21 13:07:19.273  INFO 17020 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-21 13:07:19.420  INFO 17020 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-21 13:07:19.877  INFO 17020 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@228cea97: startup date [Thu May 21 13:07:17 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@39d9314d
+2020-05-21 13:07:20.021  INFO 17020 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-21 13:07:20.022  INFO 17020 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-21 13:07:20.058  INFO 17020 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-21 13:07:20.059  INFO 17020 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-21 13:07:21.252  INFO 17020 --- [Thread-5] com.gateway.server.NettyServer           : server run in port 8999
+
+2020-05-21 13:07:23.540  INFO 17020 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-05-21 13:07:23.550  INFO 17020 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-05-21 13:07:23.590  INFO 17020 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2020-05-21 13:07:23.607  INFO 17020 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-05-21 13:07:23.612  INFO 17020 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-05-21 13:07:23.614  INFO 17020 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-05-21 13:07:23.614  INFO 17020 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-05-21 13:07:23.615  INFO 17020 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-05-21 13:07:23.615  INFO 17020 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-05-21 13:07:23.681  INFO 17020 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-21 13:07:23.683  INFO 17020 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-05-21 13:07:23.683  INFO 17020 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-05-21 13:07:23.683  INFO 17020 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-05-21 13:07:23.683  INFO 17020 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-05-21 13:07:23.683  INFO 17020 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-05-21 13:07:23.684  INFO 17020 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-05-21 13:07:23.684  INFO 17020 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-05-21 13:07:23.690  INFO 17020 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-05-21 13:07:23.692  INFO 17020 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-05-21 13:07:23.695  INFO 17020 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-05-21 13:07:23.696  INFO 17020 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1590037643696 with initial instances count: 4
+2020-05-21 13:07:23.701  INFO 17020 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application NETTYSERVER with eureka with status UP
+2020-05-21 13:07:23.701  INFO 17020 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1590037643701, current=UP, previous=STARTING]
+2020-05-21 13:07:23.704  INFO 17020 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NETTYSERVER/DESKTOP-8KM16BQ:nettyserver:8010: registering service...
+2020-05-21 13:07:23.721  INFO 17020 --- [main] com.gateway.TestNettyServerApplication   : Started TestNettyServerApplication in 20.997 seconds (JVM running for 22.878)
+2020-05-21 13:07:23.760  INFO 17020 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NETTYSERVER/DESKTOP-8KM16BQ:nettyserver:8010 - registration status: 204
+2020-05-21 13:07:24.106  INFO 17020 --- [main] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2020-05-21 13:07:24.109  INFO 17020 --- [main] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2020-05-21 13:07:24.424  INFO 17020 --- [Thread-6] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@228cea97: startup date [Thu May 21 13:07:17 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@39d9314d
+2020-05-21 13:07:24.425  INFO 17020 --- [Thread-6] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application NETTYSERVER with eureka with status DOWN
+2020-05-21 13:07:24.425  WARN 17020 --- [Thread-6] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1590037644425, current=DOWN, previous=UP]
+2020-05-21 13:07:24.426  INFO 17020 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NETTYSERVER/DESKTOP-8KM16BQ:nettyserver:8010: registering service...
+2020-05-21 13:07:24.427  INFO 17020 --- [Thread-6] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2020-05-21 13:07:24.432  INFO 17020 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NETTYSERVER/DESKTOP-8KM16BQ:nettyserver:8010 - registration status: 204
+2020-05-21 13:07:25.575  INFO 17020 --- [Thread-6] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-05-21 13:07:25.579  INFO 17020 --- [Thread-6] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-05-21 13:07:28.581  INFO 17020 --- [Thread-6] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-05-21 13:07:28.586  INFO 17020 --- [Thread-6] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NETTYSERVER/DESKTOP-8KM16BQ:nettyserver:8010 - deregister  status: 200
+2020-05-21 13:07:28.591  INFO 17020 --- [Thread-6] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
