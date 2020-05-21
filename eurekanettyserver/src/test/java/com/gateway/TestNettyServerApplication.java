@@ -1,27 +1,22 @@
 package com.gateway;
 
 import com.gateway.server.NettyServer;
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Bean;
+import org.springframework.data.redis.core.StringRedisTemplate;
 
-@SpringBootApplication
-@EnableDiscoveryClient
+@SpringBootTest
 public class TestNettyServerApplication {
-    public static void main(String[] args) {
-        SpringApplication.run(NettyServerApplication.class, args);
-    }
+    @Autowired
+    private StringRedisTemplate stringRedisTemplate;
 
-    @Bean
-    public NettyServer run() {
-        NettyServer nettyServer = new NettyServer(8999);
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                nettyServer.run();
-            }
-        }).start();
-        return nettyServer;
+    @Test
+    public void contextLoads() {
+        System.out.println(stringRedisTemplate);
     }
 }
