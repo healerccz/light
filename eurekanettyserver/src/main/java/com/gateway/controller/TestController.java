@@ -8,8 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@Configuration
-@RequestMapping("light")
+@RequestMapping("t")
 public class TestController {
 
     @Autowired
