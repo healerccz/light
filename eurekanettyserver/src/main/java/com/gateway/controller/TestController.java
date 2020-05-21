@@ -7,14 +7,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("server")
 public class TestController {
     @Autowired
     private BaseRedisService baseRedisService;
 
-    @GetMapping("/test")
+    @GetMapping("test")
     public boolean test() {
-        String key = "this is a string for testing";
-        String value = "this is a value";
+        String key = "keykey";
+        String value = "valuevalue";
         baseRedisService.setString(key, value, 3600L);
         return true;
     }
