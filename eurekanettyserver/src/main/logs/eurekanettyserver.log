@@ -5556,3 +5556,6 @@ java.lang.NullPointerException: null
 2020-05-21 15:20:53.567  INFO 16684 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8010
 2020-05-21 15:20:53.573  INFO 16684 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NETTYSERVER/DESKTOP-8KM16BQ:nettyserver:8010 - registration status: 204
 2020-05-21 15:20:53.573  INFO 16684 --- [main] com.gateway.NettyServerApplication       : Started NettyServerApplication in 22.99 seconds (JVM running for 24.883)
+2020-05-21 15:25:25.661  INFO 16684 --- [nioEventLoopGroup-5-2] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2020-05-21 15:25:25.664  INFO 16684 --- [nioEventLoopGroup-5-2] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2020-05-21 15:25:53.504  INFO 16684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

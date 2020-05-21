@@ -3725,3 +3725,15 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2020-05-21 15:21:28.441  INFO 14860 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8020
 2020-05-21 15:21:28.444  INFO 14860 --- [main] com.gateway.NettyClientApplication       : Started NettyClientApplication in 16.809 seconds (JVM running for 18.674)
 2020-05-21 15:21:28.452  INFO 14860 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NETTYCLIENT/DESKTOP-8KM16BQ:nettyclient:8020 - registration status: 204
+2020-05-21 15:25:25.259  INFO 14860 --- [http-nio-8020-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-05-21 15:25:25.259  INFO 14860 --- [http-nio-8020-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-05-21 15:25:25.280  INFO 14860 --- [http-nio-8020-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2020-05-21 15:25:25.369  INFO 14860 --- [http-nio-8020-exec-1] com.gateway.client.NettyClient           : send command : {"cmd":2}
+
+2020-05-21 15:25:26.474  INFO 14860 --- [http-nio-8020-exec-1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2020-05-21 15:25:26.476  INFO 14860 --- [http-nio-8020-exec-1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2020-05-21 15:25:35.213  INFO 14860 --- [http-nio-8020-exec-2] com.gateway.client.NettyClient           : send command : {"cmd":1}
+
+2020-05-21 15:25:45.044  INFO 14860 --- [http-nio-8020-exec-3] com.gateway.client.NettyClient           : send command : {"cmd":2}
+
+2020-05-21 15:26:28.390  INFO 14860 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
