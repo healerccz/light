@@ -20,13 +20,24 @@ public class NettyClientHandler {
 
     @GetMapping("command")
     public String sendCom(@RequestParam String cmd) throws InterruptedException {
-        boolean flag;
-        flag = nettyClient.sendCom(cmd);
-
-        Thread.sleep(1000);
-        String result = baseRedisService.get("update");
-        System.out.println("这是redis中key对应对的值：" + result);
-//        baseRedisService.delete("update");
+        String key;
+        nettyClient.sendCom(cmd);
+        key = cmd.equals("3") ? "query" : "update";
+        Thread.sleep(4000);
+        String result = "";
+        try {
+            result = baseRedisService.get(key);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        System.out.println("cmd的值：" + cmd);
+        System.out.println("key的值:"+ key);
+        System.out.println("value的值：" + result);
+        baseRedisService.delete(key);
+        if (result != null) {
+            result = result.replace("00124B0012994BA3", "B0012994BA3");
+            result = result.replace("\n", "");
+        }
 
         return result;
     }

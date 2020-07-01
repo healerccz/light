@@ -10,7 +10,7 @@ public class Applications {
     }
 
     public static void setContext(ConfigurableApplicationContext context) {
-        System.out.println("初始化");
+//        System.out.println("初始化");
         Applications.context = context;
     }
 }

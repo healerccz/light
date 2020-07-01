@@ -3,6 +3,7 @@ package com.gateway.controller;
 import com.alibaba.fastjson.JSON;
 import com.gateway.entity.User;
 import com.gateway.response.LoginReturnData;
+import com.gateway.response.LogoutReturnData;
 import com.gateway.service.UserService;
 import com.gateway.serviceImpl.BaseRedisService;
 import com.gateway.token.TokenUtils;
@@ -32,7 +33,7 @@ public class UserHandler {
 //            RequestMethod.POST, RequestMethod.DELETE, RequestMethod.OPTIONS,
 //            RequestMethod.HEAD, RequestMethod.PUT, RequestMethod.PATCH}, origins="*")
     @ResponseBody
-    public LoginReturnData login(@RequestBody Map map) {
+    public LoginReturnData login(@RequestBody Map<String, String> map) {
         LoginReturnData returnData  = new LoginReturnData();
         Logger logger = LoggerFactory.getLogger(getClass());
         String username = (String)map.get("username");
@@ -53,7 +54,16 @@ public class UserHandler {
             returnData.id = user.id+"";
             returnData.username = user.username;
         }
-        System.out.println(baseRedisService);
+//        System.out.println(baseRedisService);
         return returnData;
+    }
+
+    @PostMapping("/logout")
+    @ResponseBody
+    public LogoutReturnData logout(@RequestBody Map<String, String> map) {
+        String token = (String)map.get("token");
+        baseRedisService.delete(token);
+        System.out.println(token);
+        return new LogoutReturnData("200","退出成功");
     }
 }

@@ -12,9 +12,8 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import javax.annotation.Resource;
 
 public class ServerIniterHandler extends ChannelInitializer<SocketChannel> {
-
     @Override
-    protected void initChannel(SocketChannel socketChannel) throws Exception {
+    protected void initChannel(SocketChannel socketChannel) {
         //管道注册handler
         ChannelPipeline pipeline = socketChannel.pipeline();
         //编码通道处理
